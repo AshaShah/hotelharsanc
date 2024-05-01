@@ -1,0 +1,162 @@
+nav{
+    width: 100%;
+    background-color: white;
+    color: #302f2f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+
+}
+.logo {
+    width: 60px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+  }
+
+  .dark-nav{
+    background: rgb(217, 201,179);
+  }
+
+  .reservation-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .reservation-modal form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reservation-modal label {
+    margin-bottom: 10px;
+  }
+  
+  .reservation-modal input {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .reservation-modal button {
+    padding: 15px 0;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .reservation-modal .close-btn {
+    width: 48%;
+    padding-top: 10px;
+    background-color: rgb(196, 48, 48); 
+    margin-right: 80px;
+  }
+  
+  .reservation-modal button.book-btn {
+    width: 48%;
+    margin-bottom: 10px; 
+    background-color: #1b46a3;
+  }
+  
+  
+  /*-------- media query ----------*/
+  @media (max-width: 840px) {
+    .reservation-modal {
+      width: 80%;
+      max-width: 400px;
+    }
+  }  
+  
+  
+  @media (max-width: 1000px){
+    .logo{
+      width: 140px;
+    }
+    nav ul li{
+      margin: 10px 15px;
+    }
+
+  }
+  @media (max-width: 840px){
+    nav{
+      padding: 15px 0;
+    }
+    nav ul{
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: #fefeff;
+      z-index: -1;
+      width: 200x;
+      padding-top: 70px;
+      transition: 0.5s;
+    }
+  }
+
+  @media (max-width: 840px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #babac7;
+      width: 100%;
+      text-align: center;
+      transition: 0.5s;
+    }
+  
+    .nav-links.show {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+  
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #000;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+  
+    .bar.open:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .bar.open:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .bar.open:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+
+  

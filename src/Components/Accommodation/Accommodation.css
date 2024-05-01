@@ -1,0 +1,55 @@
+.accommodation {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .accommodation-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  
+  .image,
+  .description {
+    width: 45%; 
+  }
+  
+  .image img {
+    width: 60%;
+    border-radius: 5px;
+  }
+  
+  .description p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 800px) {
+    .accommodation-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image,
+    .description {
+      width: 100%;
+    }
+  
+    .image img {
+      width: 80%; /* Adjust the width as needed */
+    }
+  
+    .description p {
+      text-align: center;
+    }
+  
+    .image {
+      order: -1; /* Placing the image before the description */
+      margin-bottom: 20px; /* Adding margin to create space between image and text */
+    }
+  }
+  
