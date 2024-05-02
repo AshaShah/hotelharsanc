@@ -6,6 +6,7 @@ import gallery_1 from '../../assests/building.jpg';
 import gallery_2 from '../../assests/gallery-1.jpg';
 import gallery_3 from '../../assests/service_4.jpg';
 import gallery_4 from '../../assests/service_3.jpg';
+import gallery_5 from '../../assests/decora.jpg'
 
 const Photos = () => {
   const sliderRef = useRef(null);
@@ -27,6 +28,7 @@ const Photos = () => {
           <img src={gallery_2} alt="" />
           <img src={gallery_3} alt="" />
           <img src={gallery_4} alt="" />
+          <img src={gallery_5} alt="" />
         </div>
       </div>
       <img src={next_icon} alt="" className='next-btn' onClick={scrollRight} />
